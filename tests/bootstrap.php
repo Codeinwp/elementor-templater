@@ -31,7 +31,7 @@ function _manually_load_plugin() {
 tests_add_filter( 'muplugins_loaded', '_manually_load_plugin' );
 // Start up the WP testing environment.
 require $_tests_dir . '/includes/bootstrap.php';
-activate_plugin( 'elementor-addon-widgets/elementemplator.php' );
+activate_plugin( 'elementor-templater/elementemplator.php' );
 global $current_user;
 $current_user = new WP_User( 1 );
 $current_user->set_role( 'administrator' );
