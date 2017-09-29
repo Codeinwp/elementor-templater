@@ -40,3 +40,23 @@ if ( version_compare( floatval( $GLOBALS['wp_version'] ), '4.7', '<' ) ) { // 4.
 
 /* Template Functions */
 require_once( ET_PATH . 'inc/elementemplater-functions.php' );
+
+/* Require vendor file. */
+$vendor_file = ET_PATH . 'vendor/autoload.php';
+if ( is_readable( $vendor_file ) ) {
+	require_once $vendor_file;
+}
+
+/**
+ * Register SDK.
+ *
+ * @param $products
+ *
+ * @return array
+ */
+function elementor_templater_register_sdk( $products ) {
+	$products[] = __FILE__;
+	return $products;
+}
+
+add_filter( 'themeisle_sdk_products', 'elementor_templater_register_sdk', 10, 1 );
