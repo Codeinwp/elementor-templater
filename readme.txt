@@ -41,7 +41,7 @@ The following themes are currently supported out of the box - if your desired th
 
 If you are a theme author and would like to have your theme added to our supported list please provide details and we'll see what we can do.
 
-If you find any issues with your particula theme not playing nice with the templates please let us know so that we can do our best
+If you find any issues with your particular theme not playing nice with the templates please let us know so that we can do our best
 to accommodate you.
 
 == Installation ==
@@ -64,7 +64,7 @@ Yes. This plugin acts as a helper or go between the Elementor Page builder and y
 Yes and No. The short answer is yes, you will be able to select the included templates. However, not all themes are supported in terms of the required styling and you may therefore need to add some custom css for your desired theme.
 
 **Why a blank template?**
-Ever wanted to build Landing pages, sales pages or display specific pages without the clutter and distruction of header items, sidebar widgets and footer items? Now you can.
+Ever wanted to build Landing pages, sales pages or display specific pages without the clutter and distraction of header items, sidebar widgets and footer items? Now you can.
 
 **I see that support for anchor menu has been added, what is this?**
 Anchors a point on a template that are attached to a specific menu item - upon click on the menu item the anchor position will scroll in to the viewport.
@@ -105,13 +105,14 @@ Further details will be available near the time of the release.
 * Adjustments to TwentySeventeen CSS full width support
 
 = 1.0.8 =
-* Fixed issue with template loading for WordPress 4.7 due to functional changes to accomodate the new template for post types.
-* Added support for the Enlightenmen theme.
-* Fixed: Appearance of site boder caused by .site {margin:21px} in TwentySixteen theme after updating to Elementor 0.11.1 [Topic: 8450675](https://wordpress.org/support/topic/elementor-fullwidth-standard-padding-errer/)   
+* Fixed issue with template loading for WordPress 4.7 due to functional changes to accommodate the new template for post types.
+* Added support for the Enlightenment theme.
+* Fixed: Appearance of site border
+ caused by .site {margin:21px} in TwentySixteen theme after updating to Elementor 0.11.1 [Topic: 8450675](https://wordpress.org/support/topic/elementor-fullwidth-standard-padding-errer/)
 * Wrapped custom post type function with a conditional check on WP version due to the upcoming post type template support - support to be deprecated!   
 
 = 1.0.7 =
-* Further CSS enhancement for TwentySixteen - resolve the issue with top/bottom baground showing through on both templates
+* Further CSS enhancement for TwentySixteen - resolve the issue with top/bottom background showing through on both templates
 
 = 1.0.6 =
 * Added strict check for GeneratePress as the active theme for previous update in order to avoid fatal error on title check
