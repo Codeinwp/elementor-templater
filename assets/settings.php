@@ -5,11 +5,11 @@ $tcp_pts = isset( $tcp_options['objects'] ) ? $tcp_options['objects'] : array();
 
 <div class="wrap">
 	<?php screen_icon( 'plugins' ); ?>
-	<h2><?php _e( 'Post Type Template Settings', 'elementemplater' ); ?></h2>
+	<h2><?php _e( 'Post Type Template Settings', 'elementor-templater' ); ?></h2>
 	<?php if ( isset( $_GET['msg'] ) ) : ?>
 		<div id="message" class="updated below-h2">
 			<?php if ( $_GET['msg'] == 'update' ) : ?>
-				<p><?php _e( 'Settings Updated.','elementemplater' ); ?></p>
+				<p><?php _e( 'Settings Updated.','elementor-templater' ); ?></p>
 			<?php endif; ?>
 		</div>
 	<?php endif; ?>
@@ -26,7 +26,7 @@ $tcp_pts = isset( $tcp_options['objects'] ) ? $tcp_options['objects'] : array();
 			<table class="form-table">
 				<tbody>
 					<tr valign="top">
-						<p><?php _e( 'Check to Apply Templates for Custom Post Types', 'elementemplater' ); ?></p>
+						<p><?php _e( 'Check to Apply Templates for Custom Post Types', 'elementor-templater' ); ?></p>
 					</tr>
 					<tr>
 						<td>
@@ -62,7 +62,7 @@ $tcp_pts = isset( $tcp_options['objects'] ) ? $tcp_options['objects'] : array();
 		</div>
 
 				<p class="submit">
-			<input id="submit" class="button button-primary" name="elcpt_submit" value="<?php _e( 'Save Changes', 'elementemplater' ); ?>" type="submit">
+			<input id="submit" class="button button-primary" name="elcpt_submit" value="<?php _e( 'Save Changes', 'elementor-templater' ); ?>" type="submit">
 		</p>
 
 	</form>

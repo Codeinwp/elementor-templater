@@ -26,7 +26,7 @@ class ElemenTemplater {
 	}
 
 	public function elementemplater_load_plugin_textdomain() {
-		load_plugin_textdomain( 'elementemplater' );
+		load_plugin_textdomain( 'elementor-templater' );
 	}
 
 		/**
@@ -69,8 +69,8 @@ class ElemenTemplater {
 
 		// Add your templates to this array.
 		$this->templates = array(
-			'templates/builder-fullwidth.php'     => __( 'Elementor Fullwidth Blank', 'elementemplater' ),
-			'templates/builder-fullwidth-std.php' => __( 'Elementor Fullwidth Standard', 'elementemplater' ),
+			'templates/builder-fullwidth.php'     => __( 'Elementor Fullwidth Blank', 'elementor-templater' ),
+			'templates/builder-fullwidth-std.php' => __( 'Elementor Fullwidth Standard', 'elementor-templater' ),
 		);
 	}
 

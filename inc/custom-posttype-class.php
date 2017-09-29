@@ -17,7 +17,7 @@ class WP_CustomTemplates {
 	}
 
 	function wptcp_admin_menu() {
-		add_options_page( __( 'Post Type Template', 'elementemplater' ), __( 'Post Type Template', 'elementemplater' ), 'manage_options', 'wptcp-settings', array($this, 'wptcp_admin_page') );
+		add_options_page( __( 'Post Type Template', 'elementor-templater' ), __( 'Post Type Template', 'elementor-templater' ), 'manage_options', 'wptcp-settings', array($this, 'wptcp_admin_page') );
 	}
 
 	function wptcp_admin_page() {
@@ -32,7 +32,7 @@ class WP_CustomTemplates {
 			foreach ( $post_types as $post_type ) {
 				add_meta_box(
 					'postparentdiv',
-					__( 'Custom Template', 'elementemplater' ),
+					__( 'Custom Template', 'elementor-templater' ),
 					array( $this, 'wptcp_post_template'),
 					$post_type,
 					'side',
@@ -50,7 +50,7 @@ class WP_CustomTemplates {
 		$custom_template = $this->wptcp_get_custom_post_template();
 
 		if ( $templates ) { ?>
-			<label class="hidden" for="page_template"><?php _e( 'Choose Template', 'elementemplater' ); ?></label>
+			<label class="hidden" for="page_template"><?php _e( 'Choose Template', 'elementor-templater' ); ?></label>
 			<input type="hidden" name="tcp_current_template" value="1" />
 			<select name="custom_post_template" id="custom_post_template">
 				<option 
@@ -60,7 +60,7 @@ class WP_CustomTemplates {
 						echo "selected='selected'";
 					}
 					?>
-					><?php _e( 'Default Template' ); ?></option>
+					><?php _e( 'Default Template', 'elementor-templater' ); ?></option>
 				<?php foreach ( $templates as $filename => $name ) { ?>
 					<option 
 						value='<?php echo $filename; ?>'
