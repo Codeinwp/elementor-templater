@@ -1,14 +1,14 @@
-=== Page Templater For Elementor ===
-Contributors: themeisle, codeinwp
-Tags: elementor, pagebuilder, page builder, page builder template, page builder templates, actions, storefront, twentysixteen, genesis, template builder, builder templates
-Requires at least: 4.4
-Tested up to: 4.7.3
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+# Page Templater For Elementor #
+**Contributors:** [themeisle](https://profiles.wordpress.org/themeisle), [codeinwp](https://profiles.wordpress.org/codeinwp)  
+**Tags:** elementor, pagebuilder, page builder, page builder template, page builder templates, actions, storefront, twentysixteen, genesis, template builder, builder templates  
+**Requires at least:** 4.4  
+**Tested up to:** 4.7.3  
+**License:** GPLv2 or later  
+**License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
 A helper plugin for users of Elementor Page Builder
 
-== Description ==
+## Description ##
 This plugin does one and one thing only - adds page templates (plus css) to any theme for use with the [Elementor Page Builder](https://wordpress.org/plugins/elementor/)  
  
 Now includes support for custom menu to be used for anchor points on the full width blank template.
@@ -21,7 +21,7 @@ Adds 2 new templates for complete full width experience while using the page bui
 - Template 1: Full width with header and footer : Builder Fullwidth Standard   
 - Template 2: Full width and no header or footer : Builder Fullwidth Blank   
 	
-== Supported Themes ==
+## Supported Themes ##
 The following themes are currently supported out of the box - if your desired theme is not list you may need to add some custom css.   
 
 * [Hestia](https://wordpress.org/themes/hestia/) - by ThemeIsle
@@ -47,7 +47,7 @@ If you are a theme author and would like to have your theme added to our support
 If you find any issues with your particular theme not playing nice with the templates please let us know so that we can do our best
 to accommodate you.
 
-== Installation ==
+## Installation ##
 * These instructions assumes you already have a WordPress site and the Elementor plugin installed and activated.
 
 1. Install using the WordPress built-in Plugin installer, or Extract the zip file and drop the contents in the `wp-content/plugins/` directory of your WordPress installation.
@@ -57,7 +57,7 @@ to accommodate you.
 4. Press the 'Edit with Elementor' button.
 5. Now you can drag and drop widgets from the left panel onto the content area, as well as add new sections and columns that make up the page structure which will be render in a full width layout.
 
-== Frequently Asked Questions ==
+## Frequently Asked Questions ##
 
 **With this plugin do I still need Elementor and a theme?**
 
@@ -83,14 +83,14 @@ To understand how this works please download the free child theme for Actions fr
 
 Further details will be available near the time of the release.
 
-== Screenshots ==
+## Screenshots ##
 
 1. Fullwidth with Header and Footer
 
 2. Fullwidth no Header no Footer
 
-== Changelog ==
-= 1.2.0 - 2017-09-29  = 
+## Changelog ##
+### 1.2.0 - 2017-09-29  ###
 
 * ---
 * Added Themeisle SDK.
@@ -98,50 +98,50 @@ Further details will be available near the time of the release.
 * Changed contributors.
 
 
-= 1.1.3 =
+### 1.1.3 ###
 * Enabled support for Elementor Library Post Type on the sample post templates.
 
-= 1.1.2 =
+### 1.1.2 ###
 * FIXED: JS Bug where the mobile menu toggle was not working for certain themes
 
-= 1.1.1 =
+### 1.1.1 ###
 * Plugin name change due to a stipulation on Elementor's Terms & Conditions
 * Added GeneratePress to the supported themes list
 
-= 1.1.0 =
+### 1.1.0 ###
 * CSS adjustment to support for Hello Pro - Genesis child theme.
 
-= 1.0.9 =
+### 1.0.9 ###
 * Adjustments to Genesis CSS full width support
 * Adjustments to TwentySeventeen CSS full width support
 
-= 1.0.8 =
+### 1.0.8 ###
 * Fixed issue with template loading for WordPress 4.7 due to functional changes to accommodate the new template for post types.
 * Added support for the Enlightenment theme.
 * Fixed: Appearance of site border
  caused by .site {margin:21px} in TwentySixteen theme after updating to Elementor 0.11.1 [Topic: 8450675](https://wordpress.org/support/topic/elementor-fullwidth-standard-padding-errer/)
 * Wrapped custom post type function with a conditional check on WP version due to the upcoming post type template support - support to be deprecated!   
 
-= 1.0.7 =
+### 1.0.7 ###
 * Further CSS enhancement for TwentySixteen - resolve the issue with top/bottom background showing through on both templates
 
-= 1.0.6 =
+### 1.0.6 ###
 * Added strict check for GeneratePress as the active theme for previous update in order to avoid fatal error on title check
 
-= 1.0.5 =
+### 1.0.5 ###
 * NEW: Added support for GeneratePress page title options - title is now shown by default on the full width template and can be disabled via GeneratePress page options.
 
-= 1.0.4 =
+### 1.0.4 ###
 * FIXED: Bug on hidden Elementor section selector tabs while in edit mode [See This Forum Topic](https://wordpress.org/support/topic/column-and-section-tabs-missing/)
 
-= 1.0.3 =
+### 1.0.3 ###
 * FIXED: Class clash with the Template for Custom Post Types plugin
 
-= 1.0.2 =   
+### 1.0.2 ###
 * NEW: Added support for custom post templates - supports all custom post types including Elementor Library.
 
-= 1.0.1 =
+### 1.0.1 ###
 * NEW: Added support to use the custom menu widget on full width blank template - ideal for anchor menus
 
-= 1.0.0 =
+### 1.0.0 ###
 * Initial release.
