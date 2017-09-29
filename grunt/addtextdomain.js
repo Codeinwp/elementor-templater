@@ -4,7 +4,7 @@ module.exports = {
     fixDomains: {
         options: {
             textdomain: '<%= package.textdomain %>',
-            updateDomains: ['elementemplater']
+            updateDomains: ['']
         },
         files: {
             src: [
