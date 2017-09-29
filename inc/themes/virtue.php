@@ -1,6 +1,6 @@
 <?php
-    /* Support for the Virtue theme */
-    $virtue = '
+	/* Support for the Virtue theme */
+	$virtue = '
 		.page-template-builder-fullwidth .headerclass,
         .page-template-builder-fullwidth .footerclass {
             display: none;
@@ -13,4 +13,4 @@
             padding-top: 0;
         }
 	';
-    wp_add_inline_style( 'kadence_theme', $virtue );
+	wp_add_inline_style( 'kadence_theme', $virtue );

@@ -1,6 +1,6 @@
 <?php
-    /* Support for the Virtue theme */
-    $experon = '
+	/* Support for the Virtue theme */
+	$experon = '
 		.page-template-builder-fullwidth-std #content {
             padding: 0;
         }
@@ -11,4 +11,4 @@
 			display: none;
 		}
 	';
-    wp_add_inline_style( 'thinkup-style', $experon );
+	wp_add_inline_style( 'thinkup-style', $experon );

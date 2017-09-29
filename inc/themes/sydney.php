@@ -1,6 +1,6 @@
 <?php
-    /* Support for the Storefront theme */
-    $sydney = '
+	/* Support for the Storefront theme */
+	$sydney = '
 		.page-template-builder-fullwidth-std .page-wrap,
         .page-template-builder-fullwidth-std .page-wrap .content-wrapper {
             padding: 0;
@@ -15,4 +15,4 @@
            display: none;
         }
 	';
-    wp_add_inline_style( 'sydney-style', $sydney );
+	wp_add_inline_style( 'sydney-style', $sydney );

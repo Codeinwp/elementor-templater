@@ -1,6 +1,6 @@
 <?php
-    /* Support for the Vantage theme */
-    $vantage = '
+	/* Support for the Vantage theme */
+	$vantage = '
 		.page-template-builder-fullwidth-std #main {
             padding: 0;
 	        max-width: 100%;
@@ -12,4 +12,4 @@
             margin-right: auto;
         }
 	';
-    wp_add_inline_style( 'vantage-style', $vantage );
+	wp_add_inline_style( 'vantage-style', $vantage );

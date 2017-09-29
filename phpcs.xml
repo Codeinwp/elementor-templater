@@ -31,9 +31,8 @@
 
 
         <!-- TODO: Rules that will need to be removed and the issues solved. -->
-        <!--<exclude name="Squiz.Commenting" />-->
-        <!--<exclude name="Generic.Commenting" />-->
-        <!--<exclude name="WordPress.NamingConventions" />-->
+        <exclude name="Squiz.Commenting" />
+        <exclude name="Generic.PHP.NoSilencedErrors.Discouraged" />
 
     </rule>
     <rule ref="WordPress-Docs">

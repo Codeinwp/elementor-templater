@@ -14,16 +14,18 @@
  */
 
 /* Do not access this file directly */
-if ( ! defined( 'WPINC' ) ) { die; }
+if ( ! defined( 'WPINC' ) ) {
+	die; }
 
-/* Constants
+/*
+ Constants
 ------------------------------------------ */
 
 /* Set plugin version constant. */
 define( 'ET_VERSION', '1.2.0' );
 
 /* Set constant path to the plugin directory. */
-define( 'ET_PATH', trailingslashit( plugin_dir_path(__FILE__) ) );
+define( 'ET_PATH', trailingslashit( plugin_dir_path( __FILE__ ) ) );
 
 /* Set the constant path to the plugin directory URI. */
 define( 'ET_URI', trailingslashit( plugin_dir_url( __FILE__ ) ) );
@@ -32,7 +34,7 @@ define( 'ET_URI', trailingslashit( plugin_dir_url( __FILE__ ) ) );
 require_once( ET_PATH . 'elementemplater-class.php' );
 
 /* Custom Post Template Class */
-if ( version_compare( floatval($GLOBALS['wp_version']), '4.7', '<' ) ) { // 4.6.1 and older
+if ( version_compare( floatval( $GLOBALS['wp_version'] ), '4.7', '<' ) ) { // 4.6.1 and older
 	require_once( ET_PATH . 'custom-posttype-class.php' );
 }
 

@@ -1,6 +1,6 @@
 <?php
-    /* Support for the Twenty Sixteen theme */
-    $style = '	    
+	/* Support for the Twenty Sixteen theme */
+	$style = '	    
 		body.page-template-builder-fullwidth.elementor-page,
 		body.page-template-builder-fullwidth-std.elementor-page {
 			background: transparent;

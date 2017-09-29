@@ -1,6 +1,6 @@
 <?php
-    /* Support for the Genesis theme */
-    $genesis = '
+	/* Support for the Genesis theme */
+	$genesis = '
 		.page-template-builder-fullwidth .site-inner,
 		.page-template-builder-fullwidth-std .site-inner {
             max-width: 100%;

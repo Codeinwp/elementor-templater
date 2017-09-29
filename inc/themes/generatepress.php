@@ -1,6 +1,6 @@
 <?php
-    /* Support for the GeneratePress theme */
-    $style = '	    
+	/* Support for the GeneratePress theme */
+	$style = '	    
 		.entry-header {
 			background-color: #fff;	
 		}		

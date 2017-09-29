@@ -1,6 +1,6 @@
 <?php
-    /* Support for the Actions theme */
-    $style = '
+	/* Support for the Actions theme */
+	$style = '
 		.elementor-body .site {
 			overflow-x: visible;
 		}
@@ -8,4 +8,4 @@
 			z-index: 1;
 		}
 	';
-    wp_add_inline_style( 'elementor-frontend', $style );
+	wp_add_inline_style( 'elementor-frontend', $style );

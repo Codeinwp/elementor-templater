@@ -1,6 +1,6 @@
 <?php
-    /* Support for the Twenty Fifteen theme */
-    $style = '
+	/* Support for the Twenty Fifteen theme */
+	$style = '
 	    body.page-template-builder-fullwidth:before {
 		    display: none;
 	    }

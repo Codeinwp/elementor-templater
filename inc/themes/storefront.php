@@ -1,6 +1,6 @@
 <?php
-    /* Support for the Storefront theme */
-    $css = '
+	/* Support for the Storefront theme */
+	$css = '
 		.page-template-builder-fullwidth-std .site-content .col-full {
             max-width: 100%;
             padding: 0;
@@ -11,4 +11,4 @@
            margin-bottom: 0;
         }
 	';
-    wp_add_inline_style( 'storefront-style', $css );
+	wp_add_inline_style( 'storefront-style', $css );

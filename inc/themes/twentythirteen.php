@@ -1,6 +1,6 @@
 <?php
-    /* Support for the Twenty Thirteen theme */
-    $thirteen = '
+	/* Support for the Twenty Thirteen theme */
+	$thirteen = '
 	    .page-template-builder-fullwidth-std .elementor-page .site {
             max-width: 100%;
 			overflow: hidden;

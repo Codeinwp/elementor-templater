@@ -1,6 +1,6 @@
 <?php
-    /* Support for the Virtue theme */
-    $edge = '
+	/* Support for the Virtue theme */
+	$edge = '
 		.page-template-builder-fullwidth-std #content {
             padding: 0;
         }
@@ -16,4 +16,4 @@
             }
 		}
 	';
-    wp_add_inline_style( 'edge-style', $edge );
+	wp_add_inline_style( 'edge-style', $edge );
