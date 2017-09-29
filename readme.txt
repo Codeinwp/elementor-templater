@@ -124,7 +124,7 @@ Further details will be available near the time of the release.
 * NEW: Added support for GeneratePress page title options - title is now shown by default on the full width template and can be disabled via GeneratePress page options.
 
 = 1.0.4 =
-* FIXED: Bug on hidden Elementor section seletor tabs while in edit mode [See This Forum Topic](https://wordpress.org/support/topic/column-and-section-tabs-missing/)
+* FIXED: Bug on hidden Elementor section selector tabs while in edit mode [See This Forum Topic](https://wordpress.org/support/topic/column-and-section-tabs-missing/)
 
 = 1.0.3 =
 * FIXED: Class clash with the Template for Custom Post Types plugin
