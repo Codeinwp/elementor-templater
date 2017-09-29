@@ -7,7 +7,7 @@
  * Author: ThemeIsle
  * Author URI: https://themeisle.com/
  * Requires at least:   4.4
- * Tested up to:        4.7.3
+ * Tested up to:        4.8
  *
  * Requires License: no
  * WordPress Available: yes
