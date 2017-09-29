@@ -1,13 +1,16 @@
 <?php
 /*
  * Plugin Name: Page Templater For Elementor
- * Plugin URI: https://wpdevhq.com/plugins/page-templater-for-elementor
+ * Plugin URI: https://themeisle.com/
  * Description: A helper plugin for users of Elementor Pagebuilder. Adds 2 new templates for complete full width experience while using the page builder - support for a number of popular themes is built-in.
  * Version: 1.1.3
- * Author: WPDevHQ
- * Author URI: https://wpdevhq.com/
+ * Author: ThemeIsle
+ * Author URI: https://themeisle.com/
  * Requires at least:   4.4
  * Tested up to:        4.7.3
+ *
+ * Requires License: no
+ * WordPress Available: yes
  */
 
 /* Do not access this file directly */
@@ -17,7 +20,7 @@ if ( ! defined( 'WPINC' ) ) { die; }
 ------------------------------------------ */
 
 /* Set plugin version constant. */
-define( 'ET_VERSION', '1.1.0' );
+define( 'ET_VERSION', '1.1.3' );
 
 /* Set constant path to the plugin directory. */
 define( 'ET_PATH', trailingslashit( plugin_dir_path(__FILE__) ) );

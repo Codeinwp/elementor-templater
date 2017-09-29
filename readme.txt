@@ -23,8 +23,9 @@ Adds 2 new templates for complete full width experience while using the page bui
 	
 == Supported Themes ==
 The following themes are currently supported out of the box - if your desired theme is not list you may need to add some custom css.   
-* [Actions](https://wordpress.org/themes/actions/) - by WPDevHQ  
-* [ActionsPro](https://wpdevhq.com/themes/actions-pro/) - by WPDevHQ    
+
+* [Hestia](https://wordpress.org/themes/hestia/) - by ThemeIsle
+* [Hestia Pro](https://themeisle.com/themes/hestia-pro/) - by Themeisle
 * [Edge](https://wordpress.org/themes/edge/) - By themefreesia  
 * [Experon](https://wordpress.org/themes/experon/) - ThinkUpThemes  
 * [Genesis](http://my.studiopress.com/themes/genesis/) - By StudioPress  
@@ -37,7 +38,9 @@ The following themes are currently supported out of the box - if your desired th
 * [TwentySeventeen](https://wordpress.org/themes/twentyseventeen/) - by WordPress.org   
 * [Vantage](https://wordpress.org/themes/vantage/) - by Greg Priday  
 * [Virtue](https://wordpress.org/themes/virtue/) - by Kadence Themes   
-* [Enlightenment](https://wordpress.org/themes/enlightenment/) - by Daniel Tara   
+* [Enlightenment](https://wordpress.org/themes/enlightenment/) - by Daniel Tara
+* [Actions](https://wordpress.org/themes/actions/) - by WPDevHQ
+* [ActionsPro](https://wpdevhq.com/themes/actions-pro/) - by WPDevHQ
 
 If you are a theme author and would like to have your theme added to our supported list please provide details and we'll see what we can do.
 
