@@ -41,6 +41,40 @@ if ( version_compare( floatval( $GLOBALS['wp_version'] ), '4.7', '<' ) ) { // 4.
 /* Template Functions */
 require_once( ET_PATH . 'inc/elementemplater-functions.php' );
 
+/* Load TGM */
+require_once( ET_PATH . 'inc/class-tgm-plugin-activation.php' );
+
+/**
+ * Configure TGMPA.
+ */
+function elementor_templater_register_required_plugins() {
+	$plugins = array(
+		array(
+			'name'      => 'Elementor Addons & Widgets',
+			'slug'      => 'elementor-addon-widgets',
+			'required'  => false,
+		),
+	);
+
+	$config = array(
+		'id'           => 'elementor-templater',
+		'default_path' => '',
+		'menu'         => 'tgmpa-install-plugins',
+		'parent_slug'  => 'plugins.php',
+		'capability'   => 'manage_options',
+		'has_notices'  => true,
+		'dismissable'  => true,
+		'dismiss_msg'  => '',
+		'is_automatic' => false,
+		'message'      => '',
+	);
+
+	tgmpa( $plugins, $config );
+}
+
+add_action( 'tgmpa_register', 'elementor_templater_register_required_plugins' );
+
+
 /* Require vendor file. */
 $vendor_file = ET_PATH . 'vendor/autoload.php';
 if ( is_readable( $vendor_file ) ) {
