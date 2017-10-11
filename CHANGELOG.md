@@ -1,4 +1,8 @@
 
+ ### v1.2.1 - 2017-10-11 
+ **Changes:** 
+ * Added Recommendation for Elementor Addons & Widgets.
+ 
  ### v1.2.0 - 2017-09-29 
  **Changes:** 
  * ---

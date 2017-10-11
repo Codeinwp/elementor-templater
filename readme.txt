@@ -90,6 +90,11 @@ Further details will be available near the time of the release.
 2. Fullwidth no Header no Footer
 
 == Changelog ==
+= 1.2.1 - 2017-10-11  = 
+
+* Added Recommendation for Elementor Addons & Widgets.
+
+
 = 1.2.0 - 2017-09-29  = 
 
 * ---
