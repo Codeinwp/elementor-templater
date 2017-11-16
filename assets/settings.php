@@ -1,6 +1,6 @@
 <?php
 $tcp_options = get_option( 'elcpt_options' );
-$tcp_pts = isset( $tcp_options['objects'] ) ? $tcp_options['objects'] : array();
+$tcp_pts     = isset( $tcp_options['objects'] ) ? $tcp_options['objects'] : array();
 ?>
 
 <div class="wrap">
@@ -9,7 +9,7 @@ $tcp_pts = isset( $tcp_options['objects'] ) ? $tcp_options['objects'] : array();
 	<?php if ( isset( $_GET['msg'] ) ) : ?>
 		<div id="message" class="updated below-h2">
 			<?php if ( $_GET['msg'] == 'update' ) : ?>
-				<p><?php _e( 'Settings Updated.','elementor-templater' ); ?></p>
+				<p><?php _e( 'Settings Updated.', 'elementor-templater' ); ?></p>
 			<?php endif; ?>
 		</div>
 	<?php endif; ?>
@@ -33,7 +33,7 @@ $tcp_pts = isset( $tcp_options['objects'] ) ? $tcp_options['objects'] : array();
 							<?php
 							$post_types = get_post_types(
 								array(
-									'public'   => true,
+									'public' => true,
 								), 'objects'
 							);
 

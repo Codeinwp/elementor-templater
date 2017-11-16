@@ -45,8 +45,8 @@ class EL_CustomTemplates {
 	function elcpt_post_template( $post ) {
 		$this->post_ID = $post->ID;
 
-		$template_vars = array();
-		$templates = $this->elcpt_get_post_templates();
+		$template_vars   = array();
+		$templates       = $this->elcpt_get_post_templates();
 		$custom_template = $this->elcpt_get_custom_post_template();
 
 		if ( $templates ) { ?>
@@ -79,9 +79,9 @@ class EL_CustomTemplates {
 	}
 
 	function elcpt_get_post_templates() {
-		$theme = wp_get_theme();
+		$theme          = wp_get_theme();
 		$post_templates = array();
-		$files = (array) $theme->get_files( 'php', 1 );
+		$files          = (array) $theme->get_files( 'php', 1 );
 		foreach ( $files as $file => $full_path ) {
 			$headers = @get_file_data( $full_path, array( 'Post Template Name' => 'Post Template Name' ) );
 			if ( empty( $headers['Post Template Name'] ) ) {
@@ -112,8 +112,8 @@ class EL_CustomTemplates {
 		}
 
 		$this->post_ID = $post_ID;
-		$template = (string) @ $_POST['custom_post_template'];
-		$template = stripslashes_deep( $template );
+		$template      = (string) @ $_POST['custom_post_template'];
+		$template      = stripslashes_deep( $template );
 		$this->elcpt_set_custom_post_template( $template );
 	}
 
@@ -154,7 +154,7 @@ class EL_CustomTemplates {
 		}
 
 		check_admin_referer( 'nonce_elcpt' );
-		$input_options = array();
+		$input_options            = array();
 		$input_options['objects'] = isset( $_POST['objects'] ) ? $_POST['objects'] : '';
 		update_option( 'elcpt_options', $input_options );
 		wp_redirect( 'options-general.php?page=elcpt-settings&msg=update' );
