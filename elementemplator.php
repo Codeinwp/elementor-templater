@@ -50,9 +50,9 @@ require_once( ET_PATH . 'inc/class-tgm-plugin-activation.php' );
 function elementor_templater_register_required_plugins() {
 	$plugins = array(
 		array(
-			'name'      => 'Elementor Addons & Widgets',
-			'slug'      => 'elementor-addon-widgets',
-			'required'  => false,
+			'name'     => 'Elementor Addons & Widgets',
+			'slug'     => 'elementor-addon-widgets',
+			'required' => false,
 		),
 	);
 

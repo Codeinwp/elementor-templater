@@ -84,7 +84,7 @@ if ( ! function_exists( 'elementor_page_content' ) ) {
 		the_content();
 	}
 }
-add_action( 'elementor_page_elements',        'elementor_page_content', 20 );
+add_action( 'elementor_page_elements', 'elementor_page_content', 20 );
 
 $theme = get_option( 'template' );
 if ( 'GeneratePress' == $theme || 'generatepress' == $theme ) {
@@ -104,5 +104,5 @@ if ( 'GeneratePress' == $theme || 'generatepress' == $theme ) {
 			endif;
 		}
 	}
-	add_action( 'elementor_page_elements',  'elementor_generate_title', 10 );
+	add_action( 'elementor_page_elements', 'elementor_generate_title', 10 );
 }

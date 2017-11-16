@@ -100,7 +100,7 @@ class ElemenTemplater {
 		}
 
 		// New cache, therefore remove the old one
-		wp_cache_delete( $cache_key , 'themes' );
+		wp_cache_delete( $cache_key, 'themes' );
 
 		// Now add our template to the list of templates by merging our templates
 		// with the existing templates array from the cache.
@@ -171,7 +171,7 @@ class ElemenTemplater {
 		 * @return  void
 		 */
 	public function elementemplater_styles() {
-		$theme = get_option( 'template' );
+		$theme    = get_option( 'template' );
 		$filename = plugin_dir_path( __FILE__ ) . 'inc/themes/' . $theme . '.php';
 		if ( file_exists( $filename ) ) {
 			include_once( $filename );
