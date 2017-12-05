@@ -90,6 +90,11 @@ Further details will be available near the time of the release.
 2. Fullwidth no Header no Footer
 
 == Changelog ==
+= 1.2.2 - 2017-11-27  = 
+
+* Fixed TGM strings for recommended plugins.
+
+
 = 1.2.1 - 2017-10-11  = 
 
 * Added Recommendation for Elementor Addons & Widgets.
