@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @TODO is this removable?
+ *
+ * Class WP_CustomTemplates
+ */
 class WP_CustomTemplates {
 
 	private $wptcp_meta;

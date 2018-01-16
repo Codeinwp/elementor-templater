@@ -71,9 +71,7 @@ function elementor_templater_register_required_plugins() {
 
 	tgmpa( $plugins, $config );
 }
-
 add_action( 'tgmpa_register', 'elementor_templater_register_required_plugins' );
-
 
 /* Require vendor file. */
 $vendor_file = ET_PATH . 'vendor/autoload.php';
@@ -92,5 +90,4 @@ function elementor_templater_register_sdk( $products ) {
 	$products[] = __FILE__;
 	return $products;
 }
-
 add_filter( 'themeisle_sdk_products', 'elementor_templater_register_sdk', 10, 1 );

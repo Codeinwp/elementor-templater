@@ -1,4 +1,7 @@
 <?php
+/**
+ * @TODO this file is not included anywere. should we remove it?
+ */
 $tcp_options = get_option( 'elcpt_options' );
 $tcp_pts     = isset( $tcp_options['objects'] ) ? $tcp_options['objects'] : array();
 ?>
