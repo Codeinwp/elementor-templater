@@ -3,7 +3,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/Codeinwp/elementor-templater"
+      "url": "https://github.com/Codeinwp/themeisle-sdk"
     }
   ],
   "homepage": "https://themeisle.com/plugins/elementor-templater/",
