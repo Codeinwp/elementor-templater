@@ -19,6 +19,16 @@ class ElemenTemplater {
 		return self::$instance;
 	}
 
+	/**
+	 * Initializes the plugin by setting filters and administration functions.
+	 */
+	private function __construct() {
+		add_action( 'init', array( $this, 'elementemplater_load_plugin_textdomain' ) );
+		add_action( 'init', array( $this, 'load_composer_lib' ), 9 );
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ), 998 );
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ), 9999 );
+	}
+
 	public function elementemplater_load_plugin_textdomain() {
 		load_plugin_textdomain( 'elementor-templater' );
 	}
@@ -30,16 +40,6 @@ class ElemenTemplater {
 		if ( class_exists( '\ThemeIsle\FullWidthTemplates' ) ) {
 			\ThemeIsle\FullWidthTemplates::instance();
 		}
-	}
-
-	/**
-	 * Initializes the plugin by setting filters and administration functions.
-	 */
-	private function __construct() {
-		add_action( 'init', array( $this, 'elementemplater_load_plugin_textdomain' ) );
-		add_action( 'init', array( $this, 'load_composer_lib' ) );
-		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ), 998 );
-		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ), 9999 );
 	}
 
 	/**

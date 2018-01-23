@@ -3,11 +3,11 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/Codeinwp/themeisle-sdk"
+      "url": "https://github.com/Codeinwp/elementor-templater"
     }
   ],
   "homepage": "https://themeisle.com/plugins/elementor-templater/",
-  "license": "GPL-2.0+",
+  "license": "GPL-2.0-or-later",
   "authors": [
     {
       "name": "ThemeIsle Team",
