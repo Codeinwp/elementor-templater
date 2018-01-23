@@ -3,11 +3,11 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/Codeinwp/themeisle-sdk"
+      "url": "https://github.com/Codeinwp/elementor-templater"
     }
   ],
   "homepage": "https://themeisle.com/plugins/elementor-templater/",
-  "license": "GPL-2.0+",
+  "license": "GPL-2.0-or-later",
   "authors": [
     {
       "name": "ThemeIsle Team",
@@ -17,7 +17,8 @@
   ],
   "type": "wordpress-plugin",
   "require": {
-    "codeinwp/themeisle-sdk": "master"
+    "codeinwp/themeisle-sdk": "master",
+    "codeinwp/full-width-page-templates": "master"
   },
   "minimum-stability": "dev",
   "prefer-stable": true
