@@ -1,7 +1,6 @@
 <?php
 /**
  * Side cases template functions.
- *
  */
 
 $theme = get_option( 'template' );
