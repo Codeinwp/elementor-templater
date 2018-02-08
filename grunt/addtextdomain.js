@@ -1,15 +1,15 @@
 /* jshint node:true */
 // https://github.com/blazersix/grunt-wp-i18n
 module.exports = {
-	fixDomains: {
-		options: {
-			textdomain: '<%= package.textdomain %>',
-			updateDomains: ['']
-		},
-		files: {
-			src: [
-				'**/*.php'
-			]
-		}
-	},
+    dependencyDomains: {
+        options: {
+            textdomain: '<%= package.textdomain %>',
+            updateDomains: ['textdomain']
+        },
+        files: {
+            src: [
+                'vendor/codeinwp/**/*.php'
+            ]
+        }
+    }
 };

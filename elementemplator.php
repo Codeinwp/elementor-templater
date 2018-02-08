@@ -3,7 +3,7 @@
  * Plugin Name: Page Templater For Elementor
  * Plugin URI: https://themeisle.com/
  * Description: A helper plugin for users of Elementor Pagebuilder. Adds 2 new templates for complete full width experience while using the page builder - support for a number of popular themes is built-in.
- * Version: 1.2.2
+ * Version: 1.2.3
  * Author: ThemeIsle
  * Author URI: https://themeisle.com/
  * Requires at least:   4.4
@@ -22,7 +22,7 @@ if ( ! defined( 'WPINC' ) ) {
 ------------------------------------------ */
 
 /* Set plugin version constant. */
-define( 'ET_VERSION', '1.2.2' );
+define( 'ET_VERSION', '1.2.3' );
 
 /* Set constant path to the plugin directory. */
 define( 'ET_PATH', trailingslashit( plugin_dir_path( __FILE__ ) ) );
@@ -71,9 +71,7 @@ function elementor_templater_register_required_plugins() {
 
 	tgmpa( $plugins, $config );
 }
-
 add_action( 'tgmpa_register', 'elementor_templater_register_required_plugins' );
-
 
 /* Require vendor file. */
 $vendor_file = ET_PATH . 'vendor/autoload.php';
@@ -92,5 +90,4 @@ function elementor_templater_register_sdk( $products ) {
 	$products[] = __FILE__;
 	return $products;
 }
-
 add_filter( 'themeisle_sdk_products', 'elementor_templater_register_sdk', 10, 1 );
