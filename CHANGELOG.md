@@ -1,4 +1,9 @@
 
+ ### v1.2.3 - 2018-02-08 
+ **Changes:** 
+ * Made plugin structure more modular
+* Added indicator arrows for page template name
+ 
  ### v1.2.2 - 2017-11-27 
  **Changes:** 
  * Fixed TGM strings for recommended plugins.
