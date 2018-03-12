@@ -1,4 +1,8 @@
 
+ ### v1.2.4 - 2018-03-12 
+ **Changes:** 
+ * Added Compatibility with a lot of themes.
+ 
  ### v1.2.3 - 2018-02-08 
  **Changes:** 
  * Made plugin structure more modular

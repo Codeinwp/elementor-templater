@@ -128,6 +128,11 @@ Further details will be available near the time of the release.
 2. Fullwidth no Header no Footer
 
 == Changelog ==
+= 1.2.4 - 2018-03-12  = 
+
+* Added Compatibility with a lot of themes.
+
+
 = 1.2.3 - 2018-02-08  = 
 
 * Made plugin structure more modular

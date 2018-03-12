@@ -22,25 +22,63 @@ Adds 2 new templates for complete full width experience while using the page bui
 - Template 2: Full width and no header or footer : Builder Fullwidth Blank   
 	
 ## Supported Themes ##
-The following themes are currently supported out of the box - if your desired theme is not list you may need to add some custom css.   
+The following themes are currently supported out of the box - if your desired theme is not list you may need to add some custom css.
 
 * [Hestia](https://wordpress.org/themes/hestia/) - by ThemeIsle
-* [Hestia Pro](https://themeisle.com/themes/hestia-pro/) - by Themeisle
-* [Edge](https://wordpress.org/themes/edge/) - By themefreesia  
-* [Experon](https://wordpress.org/themes/experon/) - ThinkUpThemes  
-* [Genesis](http://my.studiopress.com/themes/genesis/) - By StudioPress  
-* [GeneratePress](https://wordpress.org/themes/generatepress/) - By Tom Usborne   
-* [Storefront](https://wordpress.org/themes/storefront/) - by WooThemes/Automattic  
-* [TwentyFourteen](https://wordpress.org/themes/twentyfourteen/) - by WordPress.org  
-* [TwentyFifteen](https://wordpress.org/themes/twentyfifteen/) - by WordPress.org  
-* [TwentySixteen](https://wordpress.org/themes/twentysixteen/) - by WordPress.org  
-* [TwentyThirteen](https://wordpress.org/themes/twentythirteen/) - by WordPress.org  
-* [TwentySeventeen](https://wordpress.org/themes/twentyseventeen/) - by WordPress.org   
-* [Vantage](https://wordpress.org/themes/vantage/) - by Greg Priday  
-* [Virtue](https://wordpress.org/themes/virtue/) - by Kadence Themes   
+* [Hestia Pro](https://themeisle.com/themes/hestia-pro/) - by ThemeIsle
+* [Zerif Lite](https://themeisle.com/themes/zerif-lite) - by ThemeIsle
+* [ShopIsle](https://wordpress.org/themes/shop-isle/) - by ThemeIsle
+* [Orfeo](https://themeisle.com/themes/orfeo) - by ThemeIsle
+* [Edge](https://wordpress.org/themes/edge/) - By themefreesia
+* [Experon](https://wordpress.org/themes/experon/) - ThinkUpThemes
+* [Genesis](http://my.studiopress.com/themes/genesis/) - By StudioPress
+* [GeneratePress](https://wordpress.org/themes/generatepress/) - By Tom Usborne
+* [Storefront](https://wordpress.org/themes/storefront/) - by WooThemes/Automattic
+* [TwentyTwelve](https://wordpress.org/themes/twentytwelve/) - by WordPress.org
+* [TwentyThirteen](https://wordpress.org/themes/twentythirteen/) - by WordPress.org
+* [TwentyFourteen](https://wordpress.org/themes/twentyfourteen/) - by WordPress.org
+* [TwentyFifteen](https://wordpress.org/themes/twentyfifteen/) - by WordPress.org
+* [TwentySixteen](https://wordpress.org/themes/twentysixteen/) - by WordPress.org
+* [TwentySeventeen](https://wordpress.org/themes/twentyseventeen/) - by WordPress.org
+* [Vantage](https://wordpress.org/themes/vantage/) - by Greg Priday
+* [Virtue](https://wordpress.org/themes/virtue/) - by Kadence Themes
 * [Enlightenment](https://wordpress.org/themes/enlightenment/) - by Daniel Tara
 * [Actions](https://wordpress.org/themes/actions/) - by WPDevHQ
 * [ActionsPro](https://wpdevhq.com/themes/actions-pro/) - by WPDevHQ
+* [Kale](https://wordpress.org/themes/kale/) - by lyrathemes
+* [InVogue](https://wordpress.org/themes/invogue) - by Kaira
+* [Universal-Store](https://wordpress.org/themes/universal-store/) - by Themes4WP
+* [Editorial](https://wordpress.org/themes/editorial/) - by Mystery Themes
+* [Renden Business](https://wordpress.org/themes/renden-business/) - by ThinkUpThemes
+* [Spacious](https://wordpress.org/themes/spacious/) - by ThemeGrill
+* [Flash](https://wordpress.org/themes/spacious/) - by ThemeGrill
+* [Writee](https://wordpress.org/themes/writee/) - by Scissor Themes
+* [VT Blogging](https://wordpress.org/themes/vt-blogging/) - by VolThemes
+* [One Page Express](https://wordpress.org/themes/one-page-express/) - by horearadu
+* [Primer](https://wordpress.org/themes/primer/) - by GoDaddy
+* [Vantage](https://wordpress.org/themes/vantage/) - by SiteOrigin
+* [Customizr](https://wordpress.org/themes/customizr/) - by Nicolas Guillaume
+* [Nikko Portfolio](https://wordpress.org/themes/nikko-portfolio/) - by Colormelon
+* [Poseidon](https://wordpress.org/themes/poseidon/) - by ThemeZee
+* [Envo Business](https://wordpress.org/themes/envo-business/) - by EnvoThemes
+* [Hueman](https://wordpress.org/themes/hueman/) - by Nicolas Guillaume
+* [News Portal](https://wordpress.org/themes/news-portal/) - by Mystery Themes
+* [Illdy](https://wordpress.org/themes/illdy/) - by Silkalns
+* [Envy Blog](https://wordpress.org/themes/envy-blog/) - by Precise Themes
+* [Avant](https://wordpress.org/themes/avant/) - by Kaira
+* [OceanWP](https://wordpress.org/themes/oceanwp/) - by oceanwp
+* [Astra](https://wordpress.org/themes/astra/) - by Brainstorm Force
+* [Mesmerize](https://wordpress.org/themes/mesmerize/) - by horearadu
+* [Sydney](https://wordpress.org/themes/sydney/) - by athemes
+* [Ashe](https://wordpress.org/themes/ashe/) - by Royal Flush
+* [Lodestar](https://wordpress.org/themes/lodestar/) - by Automattic
+* [Total](https://wordpress.org/themes/total/) - by Hash Themes
+* [Consulting](https://wordpress.org/themes/consulting/) - by ThinkUpThemes
+* [ColorMag](https://wordpress.org/themes/colormag/) - by ThemeGrill
+* [OnePress](https://wordpress.org/themes/onepress/) - by FameThemes
+* [Shapely](https://wordpress.org/themes/shapely/) - by Silkalns
+* [HitMag](https://wordpress.org/themes/hitmag/) - by ThemezHut
+* [Divi](https://www.elegantthemes.com/gallery/divi) - by Elegant Themes
 
 If you are a theme author and would like to have your theme added to our supported list please provide details and we'll see what we can do.
 
@@ -90,6 +128,11 @@ Further details will be available near the time of the release.
 2. Fullwidth no Header no Footer
 
 ## Changelog ##
+### 1.2.4 - 2018-03-12  ###
+
+* Added Compatibility with a lot of themes.
+
+
 ### 1.2.3 - 2018-02-08  ###
 
 * Made plugin structure more modular
