@@ -128,6 +128,12 @@ Further details will be available near the time of the release.
 2. Fullwidth no Header no Footer
 
 == Changelog ==
+= 1.2.3 - 2018-02-08  = 
+
+* Made plugin structure more modular
+* Added indicator arrows for page template name
+
+
 = 1.2.2 - 2017-11-27  = 
 
 * Fixed TGM strings for recommended plugins.
