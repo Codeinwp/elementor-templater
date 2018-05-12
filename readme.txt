@@ -29,6 +29,7 @@ The following themes are currently supported out of the box - if your desired th
 * [Zerif Lite](https://themeisle.com/themes/zerif-lite) - by ThemeIsle
 * [ShopIsle](https://wordpress.org/themes/shop-isle/) - by ThemeIsle
 * [Orfeo](https://themeisle.com/themes/orfeo) - by ThemeIsle
+* [Phlox](http://phlox.pro/) - by Averta
 * [Edge](https://wordpress.org/themes/edge/) - By themefreesia
 * [Experon](https://wordpress.org/themes/experon/) - ThinkUpThemes
 * [Genesis](http://my.studiopress.com/themes/genesis/) - By StudioPress
