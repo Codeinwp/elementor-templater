@@ -1,4 +1,8 @@
 
+ ### v1.2.5 - 2018-05-15 
+ **Changes:** 
+ * Version Bump.
+ 
  ### v1.2.4 - 2018-03-12 
  **Changes:** 
  * Added Compatibility with a lot of themes.

@@ -28,8 +28,8 @@ The following themes are currently supported out of the box - if your desired th
 * [Hestia Pro](https://themeisle.com/themes/hestia-pro/) - by ThemeIsle
 * [Zerif Lite](https://themeisle.com/themes/zerif-lite) - by ThemeIsle
 * [ShopIsle](https://wordpress.org/themes/shop-isle/) - by ThemeIsle
-* [Phlox](http://phlox.pro/) - by Averta
 * [Orfeo](https://themeisle.com/themes/orfeo) - by ThemeIsle
+* [Phlox](http://phlox.pro/) - by Averta
 * [Edge](https://wordpress.org/themes/edge/) - By themefreesia
 * [Experon](https://wordpress.org/themes/experon/) - ThinkUpThemes
 * [Genesis](http://my.studiopress.com/themes/genesis/) - By StudioPress
@@ -129,6 +129,11 @@ Further details will be available near the time of the release.
 2. Fullwidth no Header no Footer
 
 ## Changelog ##
+### 1.2.5 - 2018-05-15  ###
+
+* Version Bump.
+
+
 ### 1.2.4 - 2018-03-12  ###
 
 * Added Compatibility with a lot of themes.
