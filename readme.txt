@@ -24,6 +24,7 @@ Adds 2 new templates for complete full width experience while using the page bui
 == Supported Themes ==
 The following themes are currently supported out of the box - if your desired theme is not list you may need to add some custom css.
 
+* [Neve](https://themeisle.com/themes/neve/) - by ThemeIsle
 * [Hestia](https://wordpress.org/themes/hestia/) - by ThemeIsle
 * [Hestia Pro](https://themeisle.com/themes/hestia-pro/) - by ThemeIsle
 * [Zerif Lite](https://themeisle.com/themes/zerif-lite) - by ThemeIsle
@@ -80,7 +81,6 @@ The following themes are currently supported out of the box - if your desired th
 * [Shapely](https://wordpress.org/themes/shapely/) - by Silkalns
 * [HitMag](https://wordpress.org/themes/hitmag/) - by ThemezHut
 * [Divi](https://www.elegantthemes.com/gallery/divi) - by Elegant Themes
-* [Neve](https://themeisle.com/themes/neve/) - by ThemeIsle
 
 If you are a theme author and would like to have your theme added to our supported list please provide details and we'll see what we can do.
 
