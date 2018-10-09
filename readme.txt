@@ -130,6 +130,11 @@ Further details will be available near the time of the release.
 2. Fullwidth no Header no Footer
 
 == Changelog ==
+= 1.2.6 - 2018-10-09  = 
+
+* support for Neve
+
+
 = 1.2.5 - 2018-05-15  = 
 
 * Version Bump.

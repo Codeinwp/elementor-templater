@@ -1,4 +1,8 @@
 
+ ### v1.2.6 - 2018-10-09 
+ **Changes:** 
+ * support for Neve
+ 
  ### v1.2.5 - 2018-05-15 
  **Changes:** 
  * Version Bump.
