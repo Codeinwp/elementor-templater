@@ -80,6 +80,7 @@ The following themes are currently supported out of the box - if your desired th
 * [Shapely](https://wordpress.org/themes/shapely/) - by Silkalns
 * [HitMag](https://wordpress.org/themes/hitmag/) - by ThemezHut
 * [Divi](https://www.elegantthemes.com/gallery/divi) - by Elegant Themes
+* [Neve](https://themeisle.com/themes/neve/) - by ThemeIsle
 
 If you are a theme author and would like to have your theme added to our supported list please provide details and we'll see what we can do.
 

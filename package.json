@@ -1,6 +1,6 @@
 {
   "name": "elementor-templater",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Page Templater For Elementor",
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
     "lasttranslator": "Themeisle Translate Team <friends@themeisle.com>"
   },
   "devDependencies": {
-    "grunt-plugin-fleet": "codeinwp/grunt-plugin-fleet",
+    "grunt-plugin-fleet": "https://github.com/Codeinwp/grunt-plugin-fleet/tarball/master",
     "load-project-config": "~0.2.0"
   }
 }
