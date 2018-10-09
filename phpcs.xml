@@ -28,6 +28,7 @@
         <exclude name="WordPress.Arrays.ArrayDeclarationSpacing" />
         <exclude name="Squiz.PHP.CommentedOutCode" />
         <exclude name="WordPress.WP.I18n.MissingTranslatorsComment" />
+        <exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments" />
 
 
         <!-- TODO: Rules that will need to be removed and the issues solved. -->
