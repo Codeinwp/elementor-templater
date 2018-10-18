@@ -27,6 +27,7 @@ class ElemenTemplater {
 		add_action( 'init', array( $this, 'load_composer_lib' ), 9 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ), 998 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ), 9999 );
+		add_action( 'admin_notices', array($this, 'simple_notice') );
 	}
 
 	public function elementemplater_load_plugin_textdomain() {
@@ -59,6 +60,18 @@ class ElemenTemplater {
 		if ( is_page_template( 'templates/builder-fullwidth.php' ) ) {
 			wp_enqueue_script( 'builder-fullwidth-js', plugins_url( 'assets/custom.js', __FILE__ ), array( 'jquery' ), '', true );
 		}
+	}
+
+	public function simple_notice() {
+		$now        = strtotime( 'now' );
+		$start_date = strtotime( '3 december 2018 00:00' );
+		if ( $now < $start_date ) {
+			return;
+		}
+		echo '<div class="updated notice is-dismissible">
+                <p>Do you enjoy working with Elementor?<br>
+				Check out <strong>Neve</strong>, our new <strong>FREE multipurpose theme</strong>. It\'s simple, fast and fully compatible with both Elementor and Gutenberg. <a href="' . admin_url( 'theme-install.php?theme=neve' ) . '">Click to preview theme</a>.</p>
+            </div>';
 	}
 }
 
