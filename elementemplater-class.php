@@ -28,6 +28,7 @@ class ElemenTemplater {
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ), 998 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ), 9999 );
 		add_action( 'admin_notices', array($this, 'simple_notice') );
+		add_action( 'admin_init', array($this, 'elementemplater_dismiss_notice') );
 	}
 
 	public function elementemplater_load_plugin_textdomain() {
@@ -63,15 +64,38 @@ class ElemenTemplater {
 	}
 
 	public function simple_notice() {
-		$now        = strtotime( 'now' );
-		$start_date = strtotime( '3 december 2018 00:00' );
-		if ( $now < $start_date ) {
+
+		global $current_user;
+		$user_id = $current_user->ID;
+
+		$now            = strtotime( 'now' );
+		$start_date     = strtotime( '3 december 2018 00:00' );
+		$ignored_notice = get_user_meta( $user_id, 'elementemplater_ignore_neve_notice' );
+
+		if ( ! empty( $ignored_notice ) || ( $now < $start_date ) ) {
 			return;
 		}
-		echo '<div class="updated notice is-dismissible">
-                <p>Do you enjoy working with Elementor?<br>
-				Check out <strong>Neve</strong>, our new <strong>FREE multipurpose theme</strong>. It\'s simple, fast and fully compatible with both Elementor and Gutenberg. <a href="' . admin_url( 'theme-install.php?theme=neve' ) . '">Click to preview theme</a>.</p>
-            </div>';
+
+		$dismiss_button =
+		sprintf(
+			'<a href="%s" class="notice-dismiss" style="text-decoration:none;"></a>',
+			'?elementemplater_ignore_notice=0'
+		);
+		$message        = 'Do you enjoy working with Elementor?<br>Check out <strong>Neve</strong>, our new <strong>FREE multipurpose theme</strong>. It\'s simple, fast and fully compatible with both Elementor and Gutenberg. <a href="' . admin_url( 'theme-install.php?theme=neve' ) . '" target="_blank">Click to preview theme</a>.';
+
+		printf(
+			'<div class="notice updated" style="position:relative;">%1$s<p>%2$s</p></div>',
+			$dismiss_button,
+			$message
+		);
+	}
+
+	public function elementemplater_dismiss_notice() {
+		global $current_user;
+		$user_id = $current_user->ID;
+		if ( isset( $_GET['elementemplater_ignore_notice'] ) && '0' == $_GET['elementemplater_ignore_notice'] ) {
+			add_user_meta( $user_id, 'elementemplater_ignore_neve_notice', 'true', true );
+		}
 	}
 }
 
