@@ -76,12 +76,20 @@ class ElemenTemplater {
 			return;
 		}
 
-		$dismiss_button =
-		sprintf(
+		$dismiss_button = sprintf(
 			'<a href="%s" class="notice-dismiss" style="text-decoration:none;"></a>',
 			'?elementemplater_ignore_notice=0'
 		);
-		$message        = 'Do you enjoy working with Elementor?<br>Check out <strong>Neve</strong>, our new <strong>FREE multipurpose theme</strong>. It\'s simple, fast and fully compatible with both Elementor and Gutenberg. <a href="' . admin_url( 'theme-install.php?theme=neve' ) . '" target="_blank">Click to preview theme</a>.';
+
+		$message = sprintf(
+			esc_html__( 'Do you enjoy working with Elementor? %1$s %2$s' ),
+			sprintf( '<br>Check out <strong>Neve</strong>, our new <strong>FREE multipurpose theme</strong>. It\'s simple, fast and fully compatible with both Elementor and Gutenberg.' ),
+			sprintf(
+				'<a target="_blank" href="%1$s">%2$s</a>',
+				esc_url( admin_url( 'theme-install.php?theme=neve' ) ),
+				esc_html__( 'Click to preview theme' )
+			)
+		);
 
 		printf(
 			'<div class="notice updated" style="position:relative;">%1$s<p>%2$s</p></div>',
