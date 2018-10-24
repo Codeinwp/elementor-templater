@@ -3408,7 +3408,9 @@ if ( ! function_exists( 'tgmpa_load_bulk_installer' ) ) {
 						 * }
 						 */
 						do_action(
-							'upgrader_process_complete', $this, array(
+							'upgrader_process_complete',
+							$this,
+							array(
 								'action'  => 'install', // [TGMPA + ] adjusted.
 								'type'    => 'plugin',
 								'bulk'    => true,
