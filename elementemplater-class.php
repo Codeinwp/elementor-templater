@@ -66,13 +66,10 @@ class ElemenTemplater {
 	public function simple_notice() {
 
 		global $current_user;
-		$user_id = $current_user->ID;
-
-		$now            = strtotime( 'now' );
-		$start_date     = strtotime( '3 december 2018 00:00' );
+		$user_id        = $current_user->ID;
 		$ignored_notice = get_user_meta( $user_id, 'elementemplater_ignore_neve_notice' );
 
-		if ( ! empty( $ignored_notice ) || ( $now < $start_date ) ) {
+		if ( ! empty( $ignored_notice ) ) {
 			return;
 		}
 
@@ -83,11 +80,11 @@ class ElemenTemplater {
 
 		$message = sprintf(
 			esc_html__( 'Do you enjoy working with Elementor? %1$s %2$s', 'elementor-templater' ),
-			sprintf( '<br>Check out <strong>Neve</strong>, our new <strong>FREE multipurpose theme</strong>. It\'s simple, fast and fully compatible with both Elementor and Gutenberg.' ),
+			sprintf( '<br>Check out <strong>Neve</strong>, our new <strong>FREE multipurpose theme</strong>. It\'s simple, fast and fully compatible with both Elementor and Gutenberg. See ' ),
 			sprintf(
 				'<a target="_blank" href="%1$s">%2$s</a>',
-				esc_url( admin_url( 'theme-install.php?theme=neve' ) ),
-				esc_html__( 'Click to preview theme', 'elementor-templater' )
+				'https://themeisle.com/demo/?theme=Neve',
+				esc_html__( 'theme demo.', 'elementor-templater' )
 			)
 		);
 

@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Page Templater For Elementor 1.2.6\n"
 "Report-Msgid-Bugs-To: "
 "https://github.com/Codeinwp/elementor-templater/issues\n"
-"POT-Creation-Date: 2018-10-24 14:33:05+00:00\n"
+"POT-Creation-Date: 2018-11-07 17:31:48+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -41,12 +41,12 @@ msgstr ""
 msgid "Default Template"
 msgstr ""
 
-#: elementemplater-class.php:85
+#: elementemplater-class.php:82
 msgid "Do you enjoy working with Elementor? %1$s %2$s"
 msgstr ""
 
-#: elementemplater-class.php:90
-msgid "Click to preview theme"
+#: elementemplater-class.php:87
+msgid "theme demo."
 msgstr ""
 
 #: inc/class-tgm-plugin-activation.php:334
