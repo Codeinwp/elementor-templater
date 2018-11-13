@@ -91,3 +91,19 @@ function elementor_templater_register_sdk( $products ) {
 	return $products;
 }
 add_filter( 'themeisle_sdk_products', 'elementor_templater_register_sdk', 10, 1 );
+
+/**
+ * Delete user meta 'elementemplater_ignore_neve_notice' on plugin uninstall
+ */
+function elementor_templater_uninstall() {
+	$all_users = get_users(
+		array(
+			'meta_key'   => 'elementemplater_ignore_neve_notice',
+			'meta_value' => 'true',
+		)
+	);
+	foreach ( $all_users as $user ) {
+		delete_user_meta( $user->ID, 'elementemplater_ignore_neve_notice' );
+	}
+}
+register_uninstall_hook( __FILE__, 'elementor_templater_uninstall' );
