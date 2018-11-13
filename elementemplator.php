@@ -3,7 +3,7 @@
  * Plugin Name: Page Templater For Elementor
  * Plugin URI: https://themeisle.com/
  * Description: A helper plugin for users of Elementor Pagebuilder. Adds 2 new templates for complete full width experience while using the page builder - support for a number of popular themes is built-in.
- * Version: 1.2.5
+ * Version: 1.2.6
  * Author: ThemeIsle
  * Author URI: https://themeisle.com/
  * Requires at least:   4.4
@@ -22,7 +22,7 @@ if ( ! defined( 'WPINC' ) ) {
 ------------------------------------------ */
 
 /* Set plugin version constant. */
-define( 'ET_VERSION', '1.2.5' );
+define( 'ET_VERSION', '1.2.6' );
 
 /* Set constant path to the plugin directory. */
 define( 'ET_PATH', trailingslashit( plugin_dir_path( __FILE__ ) ) );
@@ -91,3 +91,19 @@ function elementor_templater_register_sdk( $products ) {
 	return $products;
 }
 add_filter( 'themeisle_sdk_products', 'elementor_templater_register_sdk', 10, 1 );
+
+/**
+ * Delete user meta 'elementemplater_ignore_neve_notice' on plugin uninstall
+ */
+function elementor_templater_uninstall() {
+	$all_users = get_users(
+		array(
+			'meta_key'   => 'elementemplater_ignore_neve_notice',
+			'meta_value' => 'true',
+		)
+	);
+	foreach ( $all_users as $user ) {
+		delete_user_meta( $user->ID, 'elementemplater_ignore_neve_notice' );
+	}
+}
+register_uninstall_hook( __FILE__, 'elementor_templater_uninstall' );

@@ -34,7 +34,8 @@ $cpt_pts     = isset( $cpt_options['objects'] ) ? $cpt_options['objects'] : arra
 							$post_types = get_post_types(
 								array(
 									'public' => true,
-								), 'objects'
+								),
+								'objects'
 							);
 
 							foreach ( $post_types as $post_type ) {
