@@ -29,11 +29,14 @@
         <exclude name="Squiz.PHP.CommentedOutCode" />
         <exclude name="WordPress.WP.I18n.MissingTranslatorsComment" />
         <exclude name="WordPress.PHP.NoSilencedErrors.Discouraged" />
+        <exclude name="PEAR.Functions.FunctionCallSignature.MultipleArguments" />
+
 
 
         <!-- TODO: Rules that will need to be removed and the issues solved. -->
         <exclude name="Squiz.Commenting" />
         <exclude name="Generic.PHP.NoSilencedErrors.Discouraged" />
+        <exclude name="WordPress.PHP.NoSilencedErrors.Discouraged" />
         <exclude name="WordPress.WhiteSpace.PrecisionAlignment.Found" />
 
     </rule>

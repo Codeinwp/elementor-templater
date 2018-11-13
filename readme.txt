@@ -24,6 +24,7 @@ Adds 2 new templates for complete full width experience while using the page bui
 == Supported Themes ==
 The following themes are currently supported out of the box - if your desired theme is not list you may need to add some custom css.
 
+* [Neve](https://themeisle.com/themes/neve/) - by ThemeIsle
 * [Hestia](https://wordpress.org/themes/hestia/) - by ThemeIsle
 * [Hestia Pro](https://themeisle.com/themes/hestia-pro/) - by ThemeIsle
 * [Zerif Lite](https://themeisle.com/themes/zerif-lite) - by ThemeIsle
@@ -129,6 +130,16 @@ Further details will be available near the time of the release.
 2. Fullwidth no Header no Footer
 
 == Changelog ==
+= 1.2.6 - 2018-10-09  = 
+
+* support for Neve
+
+
+= 1.2.5 - 2018-05-15  = 
+
+* Version Bump.
+
+
 = 1.2.4 - 2018-03-12  = 
 
 * Added Compatibility with a lot of themes.
