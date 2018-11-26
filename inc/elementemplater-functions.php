@@ -14,7 +14,7 @@ if ( 'GeneratePress' == $theme || 'generatepress' == $theme ) {
 						<?php the_title( '<h1 class="entry-title" itemprop="headline">', '</h1>' ); ?>
 					</div>
 				</header><!-- .entry-header -->
-			<?php
+				<?php
 			endif;
 		}
 	}

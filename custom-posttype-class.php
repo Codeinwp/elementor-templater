@@ -72,7 +72,7 @@ class EL_CustomTemplates {
 						><?php echo $name; ?></option>
 				<?php } ?>
 			</select>
-	<?php
+			<?php
 		} else {
 			echo '<p>No Custom Templates Found!</p>';
 		}

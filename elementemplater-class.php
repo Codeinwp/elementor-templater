@@ -27,8 +27,13 @@ class ElemenTemplater {
 		add_action( 'init', array( $this, 'load_composer_lib' ), 9 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ), 998 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ), 9999 );
-		add_action( 'admin_notices', array($this, 'simple_notice') );
-		add_action( 'admin_init', array($this, 'elementemplater_dismiss_notice') );
+
+		$current_theme = wp_get_theme();
+		$theme_name    = $current_theme->get( 'TextDomain' );
+		if ( $theme_name !== 'neve' ) {
+			add_action( 'admin_notices', array($this, 'simple_notice') );
+			add_action( 'admin_init', array($this, 'elementemplater_dismiss_notice') );
+		}
 	}
 
 	public function elementemplater_load_plugin_textdomain() {
@@ -64,7 +69,6 @@ class ElemenTemplater {
 	}
 
 	public function simple_notice() {
-
 		global $current_user;
 		$user_id        = $current_user->ID;
 		$ignored_notice = get_user_meta( $user_id, 'elementemplater_ignore_neve_notice' );
@@ -80,11 +84,11 @@ class ElemenTemplater {
 
 		$message = sprintf(
 			esc_html__( 'Do you enjoy working with Elementor? %1$s %2$s', 'elementor-templater' ),
-			sprintf( '<br>Check out <strong>Neve</strong>, our new <strong>FREE multipurpose theme</strong>. It\'s simple, fast and fully compatible with both Elementor and Gutenberg. See ' ),
+			sprintf( '<br>Check out <strong>Neve</strong>, our new <strong>FREE multipurpose theme</strong>. It\'s simple, fast and fully compatible with both Elementor and Gutenberg. See the' ),
 			sprintf(
 				'<a target="_blank" href="%1$s">%2$s</a>',
-				'https://themeisle.com/demo/?theme=Neve',
-				esc_html__( 'theme demo.', 'elementor-templater' )
+				esc_url( admin_url( 'theme-install.php?theme=neve' ) ),
+				esc_html__( 'live preview.', 'elementor-templater' )
 			)
 		);
 
