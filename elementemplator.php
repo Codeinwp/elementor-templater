@@ -3,7 +3,7 @@
  * Plugin Name: Page Templater For Elementor
  * Plugin URI: https://themeisle.com/
  * Description: A helper plugin for users of Elementor Pagebuilder. Adds 2 new templates for complete full width experience while using the page builder - support for a number of popular themes is built-in.
- * Version: 1.2.6
+ * Version: 1.2.7
  * Author: ThemeIsle
  * Author URI: https://themeisle.com/
  * Requires at least:   4.4
@@ -22,7 +22,7 @@ if ( ! defined( 'WPINC' ) ) {
 ------------------------------------------ */
 
 /* Set plugin version constant. */
-define( 'ET_VERSION', '1.2.6' );
+define( 'ET_VERSION', '1.2.7' );
 
 /* Set constant path to the plugin directory. */
 define( 'ET_PATH', trailingslashit( plugin_dir_path( __FILE__ ) ) );
