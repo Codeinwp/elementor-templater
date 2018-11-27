@@ -85,7 +85,7 @@ class ElemenTemplater {
 
 		$message = sprintf(
 			esc_html__( 'Do you enjoy working with Elementor? %1$s %2$s', 'elementor-templater' ),
-			sprintf( '<br>Check out <strong>Neve</strong>, our new <strong>FREE multipurpose theme</strong>. It\'s simple, fast and fully compatible with both Elementor and Gutenberg. See the' ),
+			sprintf( '<br>Page Templater For Elementor recommends <strong>Neve</strong>, our new <strong>FREE multipurpose theme</strong>. It\'s simple, fast and fully compatible with both Elementor and Gutenberg. See the' ),
 			sprintf(
 				'<a target="_blank" href="%1$s">%2$s</a>',
 				esc_url( admin_url( 'theme-install.php?theme=neve' ) ),
