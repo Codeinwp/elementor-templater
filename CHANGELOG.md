@@ -1,4 +1,8 @@
 
+ ### v1.2.7 - 2018-11-27 
+ **Changes:** 
+ * Update recommended theme link
+ 
  ### v1.2.6 - 2018-10-09 
  **Changes:** 
  * support for Neve
