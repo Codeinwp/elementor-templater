@@ -30,7 +30,8 @@ class ElemenTemplater {
 
 		$current_theme = wp_get_theme();
 		$theme_name    = $current_theme->get( 'TextDomain' );
-		if ( $theme_name !== 'neve' ) {
+		$template    = $current_theme->get( 'Template' );
+		if ( $theme_name !== 'neve' && $template !== 'neve' ) {
 			add_action( 'admin_notices', array($this, 'simple_notice') );
 			add_action( 'admin_init', array($this, 'elementemplater_dismiss_notice') );
 		}
