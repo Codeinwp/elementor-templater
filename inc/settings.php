@@ -19,7 +19,7 @@ $cpt_pts     = isset( $cpt_options['objects'] ) ? $cpt_options['objects'] : arra
 		<?php
 		if ( function_exists( 'wp_nonce_field' ) ) {
 			wp_nonce_field( 'nonce_elcpt' );}
-?>
+		?>
 
 		<div id="cpt_select_objects">
 
@@ -50,11 +50,11 @@ $cpt_pts     = isset( $cpt_options['objects'] ) ? $cpt_options['objects'] : arra
 																											echo 'checked="checked"';
 																										}
 																									}
-									?>
+																									?>
 									>&nbsp;<?php echo $post_type->label; ?></label><br>
 									<?php
 							}
-								?>
+							?>
 						</td>
 					</tr>
 				</tbody>
