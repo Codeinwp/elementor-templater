@@ -28,12 +28,9 @@ class ElemenTemplater {
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ), 998 );
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ), 9999 );
 
-		$current_theme = wp_get_theme();
-		$theme_name    = $current_theme->get( 'TextDomain' );
-		$template      = $current_theme->get( 'Template' );
-		if ( $theme_name !== 'neve' && $template !== 'neve' ) {
-			add_action( 'admin_notices', array($this, 'simple_notice') );
-			add_action( 'admin_init', array($this, 'elementemplater_dismiss_notice') );
+		if ( ! class_exists( 'Ti_Upsell_Notice_Manager' ) ) {
+			require ET_PATH . 'inc/class-ti-upsell-notice-manager.php';
+			add_action( 'init', array( Ti_Upsell_Notice_Manager::instance(), 'init' ) );
 		}
 	}
 
@@ -66,45 +63,6 @@ class ElemenTemplater {
 	public function enqueue_scripts() {
 		if ( is_page_template( 'templates/builder-fullwidth.php' ) ) {
 			wp_enqueue_script( 'builder-fullwidth-js', plugins_url( 'assets/custom.js', __FILE__ ), array( 'jquery' ), '', true );
-		}
-	}
-
-	public function simple_notice() {
-		global $current_user;
-		$user_id        = $current_user->ID;
-		$ignored_notice = get_user_meta( $user_id, 'elementemplater_ignore_neve_notice' );
-
-		if ( ! empty( $ignored_notice ) ) {
-			return;
-		}
-
-		$dismiss_button = sprintf(
-			'<a href="%s" class="notice-dismiss" style="text-decoration:none;"></a>',
-			'?elementemplater_ignore_notice=0'
-		);
-
-		$message = sprintf(
-			esc_html__( 'Do you enjoy working with Elementor? %1$s %2$s', 'elementor-templater' ),
-			sprintf( '<br>Page Templater For Elementor recommends <strong>Neve</strong>, our new <strong>FREE multipurpose theme</strong>. It\'s simple, fast and fully compatible with both Elementor and Gutenberg. See the' ),
-			sprintf(
-				'<a target="_blank" href="%1$s">%2$s</a>',
-				esc_url( admin_url( 'theme-install.php?theme=neve' ) ),
-				esc_html__( 'live preview.', 'elementor-templater' )
-			)
-		);
-
-		printf(
-			'<div class="notice updated" style="position:relative;">%1$s<p>%2$s</p></div>',
-			$dismiss_button,
-			$message
-		);
-	}
-
-	public function elementemplater_dismiss_notice() {
-		global $current_user;
-		$user_id = $current_user->ID;
-		if ( isset( $_GET['elementemplater_ignore_notice'] ) && '0' == $_GET['elementemplater_ignore_notice'] ) {
-			add_user_meta( $user_id, 'elementemplater_ignore_neve_notice', 'true', true );
 		}
 	}
 }
