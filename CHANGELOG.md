@@ -1,4 +1,8 @@
 
+ ### v1.2.8 - 2018-11-29 
+ **Changes:** 
+ * Fix possible issue with multiple notices
+ 
  ### v1.2.7 - 2018-11-27 
  **Changes:** 
  * Update recommended theme link

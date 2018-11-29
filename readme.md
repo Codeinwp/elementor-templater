@@ -130,6 +130,11 @@ Further details will be available near the time of the release.
 2. Fullwidth no Header no Footer
 
 ## Changelog ##
+### 1.2.8 - 2018-11-29  ###
+
+* Fix possible issue with multiple notices
+
+
 ### 1.2.7 - 2018-11-27  ###
 
 * Update recommended theme link
