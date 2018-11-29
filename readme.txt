@@ -130,6 +130,11 @@ Further details will be available near the time of the release.
 2. Fullwidth no Header no Footer
 
 == Changelog ==
+= 1.2.7 - 2018-11-27  = 
+
+* Update recommended theme link
+
+
 = 1.2.6 - 2018-10-09  = 
 
 * support for Neve
