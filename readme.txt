@@ -2,7 +2,7 @@
 Contributors: themeisle, codeinwp
 Tags: elementor, pagebuilder, page builder, page builder template, page builder templates, actions, storefront, twentysixteen, genesis, template builder, builder templates
 Requires at least: 4.4
-Tested up to: 4.9
+Tested up to: 5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -130,6 +130,11 @@ Further details will be available near the time of the release.
 2. Fullwidth no Header no Footer
 
 == Changelog ==
+= 1.2.8 - 2018-11-29  = 
+
+* Fix possible issue with multiple notices
+
+
 = 1.2.7 - 2018-11-27  = 
 
 * Update recommended theme link
