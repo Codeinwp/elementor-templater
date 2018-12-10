@@ -2,7 +2,7 @@
 **Contributors:** [themeisle](https://profiles.wordpress.org/themeisle), [codeinwp](https://profiles.wordpress.org/codeinwp)  
 **Tags:** elementor, pagebuilder, page builder, page builder template, page builder templates, actions, storefront, twentysixteen, genesis, template builder, builder templates  
 **Requires at least:** 4.4  
-**Tested up to:** 4.9  
+**Tested up to:** 5.0 
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
