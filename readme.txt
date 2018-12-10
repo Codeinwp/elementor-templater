@@ -130,6 +130,11 @@ Further details will be available near the time of the release.
 2. Fullwidth no Header no Footer
 
 == Changelog ==
+= 1.2.9 - 2018-12-10  = 
+
+* Tested with WP 5.0
+
+
 = 1.2.8 - 2018-11-29  = 
 
 * Fix possible issue with multiple notices

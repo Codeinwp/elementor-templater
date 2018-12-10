@@ -2,7 +2,7 @@
 **Contributors:** [themeisle](https://profiles.wordpress.org/themeisle), [codeinwp](https://profiles.wordpress.org/codeinwp)  
 **Tags:** elementor, pagebuilder, page builder, page builder template, page builder templates, actions, storefront, twentysixteen, genesis, template builder, builder templates  
 **Requires at least:** 4.4  
-**Tested up to:** 5.0 
+**Tested up to:** 5.0  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -130,6 +130,11 @@ Further details will be available near the time of the release.
 2. Fullwidth no Header no Footer
 
 ## Changelog ##
+### 1.2.9 - 2018-12-10  ###
+
+* Tested with WP 5.0
+
+
 ### 1.2.8 - 2018-11-29  ###
 
 * Fix possible issue with multiple notices
